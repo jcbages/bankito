@@ -20,7 +20,7 @@ git clone https://github.com/jcbages/bankito.git
 cd bankito
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ## Minimum Database Schema
