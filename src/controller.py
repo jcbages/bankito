@@ -34,7 +34,7 @@ class BankController():
 
     def get_account(self, account_name):
         self.__requires_login()
-        account = self.model.find_account(account_name)
+        account = self.model.find_account(self.user['uid'], account_name)
         return tabulate(
             [account],
             headers=['name', 'balance', 'currency', 'status'],
