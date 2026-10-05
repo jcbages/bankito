@@ -1,5 +1,7 @@
 # Bankito CLI
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 Bankito is a small but fully interactive PostgreSQL banking shell built on top of Python's `cmd` module. It is designed to demo how isolation levels, row locks, and transfer workflows behave under concurrent load while still being practical enough to explore accounts, transactions, and transfers in a real database.
 
 ## Highlights
