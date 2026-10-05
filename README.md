@@ -1,6 +1,7 @@
 # Bankito CLI
 
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/RD17/ambar/blob/master/License.txt)
 
 Bankito is a small but fully interactive PostgreSQL banking shell built on top of Python's `cmd` module. It is designed to demo how isolation levels, row locks, and transfer workflows behave under concurrent load while still being practical enough to explore accounts, transactions, and transfers in a real database.
 
@@ -126,4 +127,4 @@ The resulting executable lands in `dist/bankito`. A prebuilt macOS (arm64) binar
 - Exceptions derive from `AppException`/`DBException`, which keeps controller logic readable and CLI-friendly—bubble up meaningful messages instead of raw traces.
 - Concurrency tests often benefit from two terminal windows pointed at the same database; try running one shell with `skip_consistent_lock` while the other stays on the default path to trigger blocking/rollbacks.
 
-Happy hacking, and feel free to open issues/PRs if you extend the CLI with new workflows!
+Happy hacking!
